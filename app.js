@@ -8,7 +8,7 @@ import {gradeRouter} from "./routes/gradeRouter";
 
 (async () => {
   try {
-    await db.mongoose.connect(process.env.MONGODB, {
+    await db.mongoose.connect(db.url, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
